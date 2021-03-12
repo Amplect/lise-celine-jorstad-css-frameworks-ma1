@@ -1,0 +1,21 @@
+footer {
+  background: getColor(white);
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+      flex-direction: row;
+    }
+  }
+
+  p {
+    margin-top: 20px;
+    color: getColor(dark-gray);
+    font-weight: bold;
+    font-size: 0.7em;
+  }
+}

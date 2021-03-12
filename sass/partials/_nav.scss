@@ -1,0 +1,15 @@
+nav {
+  background: getColor(light-gray);
+
+  .navbar-brand {
+    font-weight: bold;
+  }
+
+  .nav-link {
+    text-transform: uppercase;
+  }
+
+  .active {
+    color: getColor(primary) !important;
+  }
+}

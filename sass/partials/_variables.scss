@@ -1,0 +1,13 @@
+$colors: (
+  primary: #c32c72,
+  secondary: #6a6a6a,
+  white: #fff,
+  light-gray: #f4f3ee,
+  dark-gray: #8d8d8d,
+);
+
+@function getColor($color) {
+  @return map-get($colors, $color);
+}
+
+$tablet-width: 768px;

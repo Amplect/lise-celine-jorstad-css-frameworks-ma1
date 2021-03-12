@@ -1,0 +1,127 @@
+nav {
+  background: #f4f3ee;
+}
+
+nav .navbar-brand {
+  font-weight: bold;
+}
+
+nav .nav-link {
+  text-transform: uppercase;
+}
+
+nav .active {
+  color: #c32c72 !important;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #e5e5e5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px;
+}
+
+footer {
+  background: #fff;
+}
+
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  footer .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+footer p {
+  margin-top: 20px;
+  color: #8d8d8d;
+  font-weight: bold;
+  font-size: 0.7em;
+}
+
+.squares {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (220px)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 220px);
+  margin: 2rem 1rem;
+  grid-gap: 3rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .squares {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.squares__item, .squares__item--white, .squares__item--pink {
+  border-radius: 10px;
+  background: #f4f3ee;
+  width: 250px;
+  height: 250px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media (max-width: 768px) {
+  .squares__item, .squares__item--white, .squares__item--pink {
+    margin: 0 auto;
+  }
+}
+
+.squares__item--white {
+  border: 2px solid #c32c72;
+  background: #fff;
+}
+
+.squares__item--pink {
+  background: #c32c72;
+}
+/*# sourceMappingURL=style.css.map */
