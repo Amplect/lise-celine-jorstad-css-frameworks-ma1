@@ -122,6 +122,7 @@ footer p {
 }
 
 .squares__item--pink {
+  border: 2px solid #fff;
   background: #c32c72;
 }
 /*# sourceMappingURL=style.css.map */
